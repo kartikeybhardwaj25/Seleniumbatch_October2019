@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="tests">
+  <test thread-count="5" name="Chrome test(failed)" parallel="tests">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="TestNG.MultiBrowserParallerTesting">
+        <methods>
+          <include name="invokeBrowser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestNG.MultiBrowserParallerTesting -->
+    </classes>
+  </test> <!-- Chrome test(failed) -->
+  <test thread-count="5" name="IE test(failed)" parallel="tests">
+    <parameter name="browserType" value="internetExplorer"/>
+    <classes>
+      <class name="TestNG.MultiBrowserParallerTesting">
+        <methods>
+          <include name="invokeBrowser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestNG.MultiBrowserParallerTesting -->
+    </classes>
+  </test> <!-- IE test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
