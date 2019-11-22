@@ -1,0 +1,14 @@
+<suite name="TestGrid" parallel="tests">
+	<test name="Test Node 1">
+		<classes>
+			<class name="grid.Node1">
+			</class>
+		</classes>
+	</test>
+	<test name="Test Node 2">
+		<classes>
+			<class name="grid.Node2">
+			</class>
+		</classes>
+	</test>
+</suite>
